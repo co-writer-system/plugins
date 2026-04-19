@@ -1,6 +1,6 @@
 {
   "name": "voice",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Build, audit, and maintain voice profiles — capture how you (or your client) writes so Claude produces authentic content, not generic AI output.",
   "author": {
     "name": "Alex McFarland",

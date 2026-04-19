@@ -174,9 +174,22 @@ Format as a bulleted list. Be ruthlessly specific:
 - Never [specific AI pattern] — this voice [what it does instead]
 - Never [structural pattern that doesn't fit]
 
-Include common AI defaults that don't match this voice: "delve," "it's worth noting,"
-"let's dive in," "in conclusion," "game-changer," etc. — but only the ones that
-actually conflict with this person's style. Don't just list every AI cliche.]
+Before writing this section, read `${CLAUDE_PLUGIN_ROOT}/references/ai-tells.md` —
+the universal AI suppression list. For each category (contrast flips, throat-clearing
+phrases, corporate vocabulary, superlatives, metaphor overreach, closings, structural
+tells, dead-giveaway patterns), scan the writing samples. If the target voice doesn't
+use a given item naturally, include it in this section with a voice-specific alternative.
+
+The critical one: the "This isn't X, it's Y" contrast flip construction is the single
+most recognizable AI tell. Unless the target voice demonstrably uses it, ban it
+explicitly here.
+
+Don't dump the entire ai-tells list — pick the items that actually conflict with this
+voice. And always frame the suppression voice-specifically, not generically:
+
+BAD: "Never use 'delve'"
+GOOD: "Never use 'delve' — [Name] writes like they're talking, and nobody says 'delve'
+out loud. They'd say 'get into' or just cut the transition entirely."]
 
 ## Calibration Examples
 

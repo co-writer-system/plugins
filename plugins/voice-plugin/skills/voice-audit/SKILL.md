@@ -48,9 +48,11 @@ Read the voice profile and evaluate it against these criteria. For each one, ass
 
 ### Never List
 
-**Strong:** Specific phrases, patterns, and AI defaults to suppress. Concrete enough that Claude can pattern-match against them. Includes alternatives where relevant.
+Before evaluating this section, read `${CLAUDE_PLUGIN_ROOT}/references/ai-tells.md` — the universal AI suppression list. Check the profile's Never Do section against those categories.
 
-**Thin:** Too short (1-2 items), too vague ("avoid jargon"), or just a list of generic AI cliches without connecting them to why they conflict with this specific voice.
+**Strong:** Covers the major AI-tell categories that apply to this voice (contrast flips like "This isn't X, it's Y", throat-clearing phrases, corporate vocabulary, hollow superlatives, metaphor overreach, closing cliches, structural tells). Each suppression is framed voice-specifically with an alternative, not just a generic ban. Phrases are concrete enough for Claude to pattern-match.
+
+**Thin:** Misses major AI-tell categories, too vague ("avoid jargon"), or lists generic cliches without explaining why they conflict with this specific voice. Missing the contrast-flip ban when the target voice doesn't actually use that construction is a major gap.
 
 **Missing:** No anti-patterns documented at all.
 
