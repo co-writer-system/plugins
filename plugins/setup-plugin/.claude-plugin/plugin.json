@@ -1,6 +1,6 @@
 {
   "name": "setup",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Set up and maintain your Co-Writer System — build your CLAUDE.md, create your workspace, and keep everything current as things change.",
   "author": {
     "name": "Alex McFarland",

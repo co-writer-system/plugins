@@ -7,7 +7,7 @@ description: Run a quality check on your CLAUDE.md and workspace — flags what'
 
 You are running a quality check on the user's Co-Writer System. This is a diagnostic — you flag issues and recommend improvements. You don't make changes unless the user asks.
 
-**If no CLAUDE.md exists**, tell the user: "You don't have a CLAUDE.md yet. Run `/setup:co-writer-setup` to build one from scratch." Then stop.
+**If no CLAUDE.md exists**, tell the user: "You don't have a CLAUDE.md yet. Create one in your workspace root first — start with the four core sections: You, Your Business, Your Ideal Client, Your Tools. Once you have a draft, run this skill again to audit it." Then stop.
 
 ## Step 1: Read Everything
 
@@ -20,7 +20,7 @@ Also check for:
 
 ## Step 2: Score Each Section
 
-Evaluate each section against what a strong CLAUDE.md looks like. Use `references/example-claude-md.md` as the benchmark.
+Evaluate each section against what a strong CLAUDE.md looks like. Use the criteria below as the benchmark.
 
 Rate each section:
 
@@ -107,9 +107,10 @@ pain that makes them search for help?
 **Tools → Adequate**
 You're using Airtable and YouTube but neither is connected. Connectors
 let Claude read and write to these tools directly.
-→ Recommendation: Set up YouTube and Airtable connectors. Go to
-  app.alexmcfarland.ai/connectors for platform connectors, or
-  Cowork → Connectors for official ones.
+→ Recommendation: Set up YouTube and Airtable connectors. Cowork has
+  official connectors in Settings → Connectors. The Co-Writer platform
+  (app.alexmcfarland.ai) also hosts connectors for YouTube, Substack,
+  Kit, Notion, and more if you want additional options.
 
 **Workspace → Outdated**
 These folders exist on disk but aren't in your CLAUDE.md:
@@ -132,9 +133,14 @@ If there are more than 10 mismatches, summarize by category. Otherwise list indi
 
 ## Step 5: Connector Opportunities
 
-Cross-reference their tools list against available connectors (read `references/connectors.md`).
+Cross-reference their tools list against commonly-available connectors. Flag any tool they use that has a connector available but isn't connected.
 
-Flag any tool they use that has a connector available but isn't connected:
+Commonly available connectors (as of this writing):
+- **Cowork official connectors:** Airtable, Notion, Google Drive, Gmail, Slack, Linear, GitHub, and others — available in Cowork's Settings → Connectors panel
+- **Co-Writer platform connectors** (`app.alexmcfarland.ai`): YouTube, Substack, Kit, Perplexity, Firecrawl, Zulip, Discord, Gemini Image, WordPress
+- **Anthropic-hosted connectors:** Check the Claude Desktop/Cowork "Add custom connector" directory for the latest list
+
+Flag format:
 
 ```
 ### Connector Opportunities
@@ -157,7 +163,7 @@ After presenting everything:
 That's the audit. Want me to:
 
 1. **Fix something specific** — tell me which section and I'll update it
-2. **Run the full setup again** — rebuild from scratch with /setup:co-writer-setup
+2. **Rebuild a weak section from scratch** — point me at the section and I'll rewrite it
 3. **Leave it** — you know what to improve, you'll handle it
 
 Or just tell me what to work on.
@@ -169,8 +175,8 @@ Don't make changes unless they ask. This is a diagnostic, not an auto-fix.
 
 - **Diagnostic, not surgery** — present findings, don't auto-fix
 - **Be specific** — "ICP is thin" is useless. "Your ICP says 'business owners' but doesn't specify what kind, what stage, or what their actual pain is" is actionable
-- **Use the reference file as the benchmark** — compare against what a production CLAUDE.md looks like
+- **Use the inline criteria as the benchmark** — compare against the "What 'Strong' Looks Like" section above
 - **Flag connector opportunities** — if they're using a tool that could be connected, tell them
 - **Don't be harsh** — this is a quality check, not a report card. "Here's how to make it stronger" not "this is bad"
-- **If they ask you to fix something**, do it right there — don't send them to another skill
+- **If they ask you to fix something**, do it right there — don't punt to another skill
 - **Voice section should ONLY be a pointer** — if it contains word lists or tone rules, flag it for cleanup
