@@ -11,12 +11,12 @@ You are running a quality check on the user's Co-Writer System. This is a diagno
 
 ## Step 1: Read Everything
 
-Read the user's CLAUDE.md. Then scan their actual workspace folder structure on disk.
+Read the user's CLAUDE.md. Then scan their entire workspace — every folder, every subfolder — so you have the full picture of what's actually on disk.
 
-Also check for:
-- A `context/` folder with reference documents
-- Any voice profile skill installed
-- Any connectors configured (check if tools mentioned in CLAUDE.md have connector entries)
+While scanning, note:
+- Any voice profile skill installed (look in `.claude/skills/` or inside any installed plugins)
+- Any connectors configured (check if tools mentioned in CLAUDE.md have matching connector entries)
+- Any reference documents, notes, or supporting files scattered through the workspace — not just in one specific folder
 
 ## Step 2: Score Each Section
 
