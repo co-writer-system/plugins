@@ -143,6 +143,8 @@ These are harder to catch because they're not keyword matches.
 
 **Perfect paragraph parallelism.** Every paragraph hits the same length, opens with the same rhythm. Real writers vary.
 
+**Three-fragment staccato rhythm.** Short fragment sentences stacked for drama, often ending with a punchline. "No designer. No developer. No agency. One afternoon." / "Fast. Cheap. Done." / "Small team. Big output. Zero overhead." AI reaches for this when it wants manufactured punch. Real writers either commit to a full sentence ("No designer, developer, or agency needed — done in an afternoon") or use fragment emphasis unpredictably and sparingly, not as a stacked rhythmic device. Default ban unless the target voice demonstrably writes this way.
+
 **Bullet-point dumping.** AI breaks everything into bullets. Good prose writers use bullets when structure calls for it, not by default.
 
 **Balanced "both sides" conclusions.** AI refuses to commit. "While X has advantages, Y also offers benefits. The right choice depends on your situation." Real writers have a view.
